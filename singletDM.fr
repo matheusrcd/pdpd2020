@@ -1,0 +1,145 @@
+(**************** This is the FeynRules mod-file for the extension of the SM where additional scalars are added **************)
+(*                                                                                                                           *)
+(*        This model file needs the Standard Model model file SM.fr.                                                         *)  
+(*                                                                                                                           *)
+(*        This model can be used in both the unitary and the Feynman gauge.                                                  *)   
+(*                                                                                                                           *)
+(*        The number of scalars is by default set to 1.                                                                      *)
+(*****************************************************************************************************************************)
+
+
+M$ModelName = "SingletDM";
+
+M$Information = {Authors -> "C. Duhr/A. Lessa",
+                 Emails -> "claude.duhr@uclouvain.be",
+                 Date -> "05. 12. 2018",
+                 Version  ->  "1.2",
+                 URLs  -> "http://feynrules.phys.ucl.ac.be/view/Main/StandardModelScalars",
+                 References -> "\"The minimal non-minimal Standard Model\", J.J. van der Bij, Phys.Lett.B636:56-59,2006, hep-ph/0603082"};
+
+FeynmanGauge = True;
+
+(* The loop coefficient *)
+
+sert[x_] := 1+ 7/30 x + 2/21 x^2 + 26/525 x^3;
+
+serw[xw_, xt_] := 1 + xw * 66/235 +xw^2 * 228/1645 + xw^3 * 696/8225 +
+            xw^4 * 5248/90475 +xw^5 * 1280/29939+ xw^6 * 54528/1646645- 
+            xt * 56/705 - xt^2 * 32/987;
+
+serp[x_] := 1 + x/3 + x^2 * 8/45 + x^3 * 4/35;
+
+
+
+
+(******* Index definitions ********)
+
+(* This is the declaration for the generation index of the new scalars *)
+
+
+M$InteractionOrderHierarchy = { {NPS,  1}, {NPT, 1}, {QCD, 1}, {QED, 2} };
+
+(****************  Parameters *************)
+
+M$Parameters = {
+
+(*  The parameters of the new sector *)
+
+  \[Lambda]S == {
+       TeX -> Subscript[\[Lambda], S],
+       InteractionOrder -> {NPS, 1},
+       ParameterName -> lS,
+       Value -> 0.5,
+       BlockName -> INVSCALAR},
+
+  \[Lambda]T == {
+       TeX -> Subscript[\[Lambda], T],
+       InteractionOrder -> {NPT, 1},
+       ParameterName -> lT,
+       Value -> 0.5,
+       BlockName -> INVSCALAR},
+
+  FT == {
+       TeX -> Subscript[F, T],
+       InteractionOrder -> {NPT, 0},
+       ParameterName -> FT,
+       Value -> 246.,
+       BlockName -> INVSCALAR},
+
+
+  \[Lambda]HS == {
+       TeX -> Subscript[\[Lambda], HS],
+       InteractionOrder -> {QED, 2},
+       ParameterName -> lHS,
+       Value -> 0.01,
+       BlockName -> INVSCALAR},
+
+  MS0 == {
+       TeX -> Subscript[M0, S],
+       ComplexParameter -> False, 
+       ParameterType->Internal, 
+       Value->Sqrt[MS^2 + (lHS/2) vev^2],
+       Description->"Higgs mass parameter"},
+
+
+AH == {TeX -> Subscript[A, H],
+       ParameterType -> Internal,
+       InteractionOrder -> {HIW, 1},
+       Value -> ee^2/4/Pi/(Pi*vev)*(47/18)*serw[(MH/2/MW)^2, (MH/2/MT)^2]},
+
+GH == {TeX -> Subscript[G, H],
+       ParameterType -> Internal,
+       InteractionOrder -> {QCD, 2},
+       Value -> -gs^2/(4*Pi(3*Pi*vev))*sert[(MH/2/MT)^2] },
+
+Gphi == {TeX -> Subscript[G, h],
+       ParameterType -> Internal,
+       InteractionOrder -> {QCD, 2},
+       Value -> -gs^2/4/Pi/(2*Pi*vev)*serp[(MH/2/MT)^2]}
+
+}
+
+
+
+(********* Particle Classes **********)
+
+M$ClassesDescription = {
+   (* The new scalar sector *)
+  S[4] == {
+        ClassName -> S,
+        SelfConjugate -> True,
+        Mass -> {MS, 50},
+        Width -> 0}
+}
+
+(*****************************************************************************************)
+
+(* The lagrangian for the new sector *)
+
+LScalar := Block[{ii,jj,mu,feynmangaugerules}, 
+  feynmangaugerules = If[Not[FeynmanGauge], {G0|GP|GPbar ->0}, {}];
+  ExpandIndices[del[S,mu]^2 - MS0^2/2 S^2 + FT*(\[Lambda]T/3!) S^3 + (\[Lambda]S/4!) S^4 + (\[Lambda]HS/2) S^2 Phibar[ii] Phi[ii], 
+                FlavorExpand->{SU2D,SU2W}]/.feynmangaugerules ];
+    
+
+(* Effective Higgs-VV lagrangian for CP even operators *)
+
+LCPEven := -1/4 GH FS[G, mu, nu, b] FS[G, mu, nu, b] H - 1/4 AH FS[A, mu, nu] FS[A, mu, nu] H;
+
+LBSM := LScalar + LCPEven
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
