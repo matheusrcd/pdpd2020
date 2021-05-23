@@ -30,7 +30,7 @@
 #*********************************************************************
 -->
 <MGVersion>
-#2.8.3
+2.8.3
 </MGVersion>
 <MG5ProcCard>
 <![CDATA[
@@ -75,8 +75,8 @@ define l- = e- mu-
 define vl = ve vm vt
 define vl~ = ve~ vm~ vt~
 import model SingletDM_UFO
-generate p p > S S
-output ppSSj_MS250
+generate p p > S S j
+output ppSSj_M250
 ]]>
 </MG5ProcCard>
 <MGProcCard>
@@ -98,7 +98,7 @@ output ppSSj_MS250
 # Process(es) requested : mg2 input                                  *
 #*********************************************************************
 # Begin PROCESS # This is TAG. Do not modify this line
-p p > S S           #Process
+p p > S S j           #Process
 # Be carefull the coupling are here in MG5 convention
           
 end_coup           # End the couplings input
@@ -211,6 +211,8 @@ SingletDM_UFO
 #*********************************************************************
 # Minimum and maximum pt's (for max, -1 means no cut)                *
 #*********************************************************************
+ 20.0  = ptj       ! minimum pt for the jets 
+ -1.0  = ptjmax    ! maximum pt for the jets
  {} = pt_min_pdg ! pt cut for other particles (use pdg code). Applied on particle and anti-particle
  {}	= pt_max_pdg ! pt cut for other particles (syntax e.g. {6: 100, 25: 50}) 
 #
@@ -219,6 +221,7 @@ SingletDM_UFO
 #*********************************************************************
 # Maximum and minimum absolute rapidity (for max, -1 means no cut)   *
 #*********************************************************************
+ 5.0 = etaj    ! max rap for the jets 
  {} = eta_min_pdg ! rap cut for other particles (use pdg code). Applied on particle and anti-particle
  {} = eta_max_pdg ! rap cut for other particles (syntax e.g. {6: 2.5, 23: 5})
 #*********************************************************************
@@ -290,7 +293,7 @@ BLOCK MASS #
       21 0.000000e+00 # g : 0.0
       22 0.000000e+00 # a : 0.0
       24 7.982436e+01 # w+ : cmath.sqrt(mz__exp__2/2. + cmath.sqrt(mz__exp__4/4. - (aew*cmath.pi*mz__exp__2)/(gf*sqrt__2)))
-      3 5.000000e+01 # s : ms
+      3 2.500000e+02 # s : ms
 ###################################
 ## INFORMATION FOR SMINPUTS
 ###################################
@@ -402,7 +405,7 @@ DECAY  9000005   0.000000e+00
 </slha>
 <MGGenerationInfo>
 #  Number of Events        :       10000
-#  Integrated weight (pb)  :       6.754629098200001e-09
+#  Integrated weight (pb)  :       9.780130173166298e-09
 </MGGenerationInfo>
 </header>
 </LesHouchesEvents>
