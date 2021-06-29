@@ -216,6 +216,15 @@ MD = Parameter(name = 'MD',
                texname = '\\text{MD}',
                lhablock = 'MASS',
                lhacode = [ 1 ])
+               
+MS = Parameter(name = 'MS',
+               nature = 'external',
+               type = 'real',
+               value = 0.5,
+               texname = '\\text{MS}',
+               lhablock = 'MASS',
+               lhacode = [ 3 ])
+               
 
 MB = Parameter(name = 'MB',
                nature = 'external',
@@ -233,11 +242,11 @@ MH = Parameter(name = 'MH',
                lhablock = 'MASS',
                lhacode = [ 25 ])
 
-MS = Parameter(name = 'MS',
+MDM = Parameter(name = 'MDM',
                nature = 'external',
                type = 'real',
                value = 50,
-               texname = '\\text{MS}',
+               texname = '\\text{MDM}',
                lhablock = 'MASS',
                lhacode = [ 9000005 ])
 
@@ -390,7 +399,7 @@ vev = Parameter(name = 'vev',
 MS0 = Parameter(name = 'MS0',
                 nature = 'internal',
                 type = 'real',
-                value = 'cmath.sqrt(MS**2 + (lHS*vev**2)/2.)',
+                value = 'cmath.sqrt(MDM**2 + (lHS*vev**2)/2.)',
                 texname = '\\text{M0}_S')
 
 AH = Parameter(name = 'AH',
