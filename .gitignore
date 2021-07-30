@@ -2,3 +2,7 @@ test.py
 .ipynb_checkpoints
 .vscode
 Events/with_ptj2000
+Events/with_ptj250
+Events/with_ptj150
+Events/with_ptj500
+Events/with_ptj800
