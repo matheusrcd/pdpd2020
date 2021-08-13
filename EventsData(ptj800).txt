@@ -1,0 +1,420 @@
+---------------------------INFO---------------------------
+EVENT:
+    ptj = 800 GeV
+    mdm = 1.0 GeV
+    DM cross section = 0.61510456 fb
+    SM cross section = 13.844244 fb
+    luminosity = 3000 1/fb
+NUMBER OF DM EVENTS: 1845.3136800000304
+NUMBER OF SM EVENTS: 41532.73200001422
+
+--------------------------CHECK---------------------------
+--> Csection = Nevents/Luminosity (2 digits approx)
+DM: 0.61510456 = 0.6151045600000101 (True)
+SM: 13.844244 = 13.84424400000474 (True)
+
+-------------------------RESULTS---------------------------
+r = 0.44217926377931815
+r > 1 when
+    lhs > 0.03308441765543877
+
+
+---------------------------INFO---------------------------
+EVENT:
+    ptj = 800 GeV
+    mdm = 10.0 GeV
+    DM cross section = 0.60933918 fb
+    SM cross section = 13.844244 fb
+    luminosity = 3000 1/fb
+NUMBER OF DM EVENTS: 1828.0175399998293
+NUMBER OF SM EVENTS: 41532.73200001422
+
+--------------------------CHECK---------------------------
+--> Csection = Nevents/Luminosity (2 digits approx)
+DM: 0.60933918 = 0.6093391799999431 (True)
+SM: 13.844244 = 13.84424400000474 (True)
+
+-------------------------RESULTS---------------------------
+r = 0.43803471397491156
+r > 1 when
+    lhs > 0.03324056646159267
+
+
+---------------------------INFO---------------------------
+EVENT:
+    ptj = 800 GeV
+    mdm = 20.0 GeV
+    DM cross section = 0.59069649 fb
+    SM cross section = 13.844244 fb
+    luminosity = 3000 1/fb
+NUMBER OF DM EVENTS: 1772.0894700003794
+NUMBER OF SM EVENTS: 41532.73200001422
+
+--------------------------CHECK---------------------------
+--> Csection = Nevents/Luminosity (2 digits approx)
+DM: 0.59069649 = 0.5906964900001265 (True)
+SM: 13.844244 = 13.84424400000474 (True)
+
+-------------------------RESULTS---------------------------
+r = 0.4246330722459267
+r > 1 when
+    lhs > 0.03376103661079939
+
+
+---------------------------INFO---------------------------
+EVENT:
+    ptj = 800 GeV
+    mdm = 30.0 GeV
+    DM cross section = 0.55679804 fb
+    SM cross section = 13.844244 fb
+    luminosity = 3000 1/fb
+NUMBER OF DM EVENTS: 1670.3941199998408
+NUMBER OF SM EVENTS: 41532.73200001422
+
+--------------------------CHECK---------------------------
+--> Csection = Nevents/Luminosity (2 digits approx)
+DM: 0.55679804 = 0.5567980399999469 (True)
+SM: 13.844244 = 13.84424400000474 (True)
+
+-------------------------RESULTS---------------------------
+r = 0.40026454591872934
+r > 1 when
+    lhs > 0.0347735571592
+
+
+---------------------------INFO---------------------------
+EVENT:
+    ptj = 800 GeV
+    mdm = 40.0 GeV
+    DM cross section = 0.5014226900000001 fb
+    SM cross section = 13.844244 fb
+    luminosity = 3000 1/fb
+NUMBER OF DM EVENTS: 1504.2680699996274
+NUMBER OF SM EVENTS: 41532.73200001422
+
+--------------------------CHECK---------------------------
+--> Csection = Nevents/Luminosity (2 digits approx)
+DM: 0.5014226900000001 = 0.5014226899998758 (True)
+SM: 13.844244 = 13.84424400000474 (True)
+
+-------------------------RESULTS---------------------------
+r = 0.36045695370293906
+r > 1 when
+    lhs > 0.03664341800631927
+
+
+---------------------------INFO---------------------------
+EVENT:
+    ptj = 800 GeV
+    mdm = 50.0 GeV
+    DM cross section = 0.40976373 fb
+    SM cross section = 13.844244 fb
+    luminosity = 3000 1/fb
+NUMBER OF DM EVENTS: 1229.2911899991598
+NUMBER OF SM EVENTS: 41532.73200001422
+
+--------------------------CHECK---------------------------
+--> Csection = Nevents/Luminosity (2 digits approx)
+DM: 0.40976373 = 0.40976372999971994 (True)
+SM: 13.844244 = 13.84424400000474 (True)
+
+-------------------------RESULTS---------------------------
+r = 0.29456621887950313
+r > 1 when
+    lhs > 0.04053509645558583
+
+
+---------------------------INFO---------------------------
+EVENT:
+    ptj = 800 GeV
+    mdm = 55.0 GeV
+    DM cross section = 0.33553362999999997 fb
+    SM cross section = 13.844244 fb
+    luminosity = 3000 1/fb
+NUMBER OF DM EVENTS: 1006.6008900003277
+NUMBER OF SM EVENTS: 41532.73200001422
+
+--------------------------CHECK---------------------------
+--> Csection = Nevents/Luminosity (2 digits approx)
+DM: 0.33553362999999997 = 0.3355336300001092 (True)
+SM: 13.844244 = 13.84424400000474 (True)
+
+-------------------------RESULTS---------------------------
+r = 0.241204541690681
+r > 1 when
+    lhs > 0.044795041197097415
+
+
+---------------------------INFO---------------------------
+EVENT:
+    ptj = 800 GeV
+    mdm = 60.0 GeV
+    DM cross section = 0.20909412000000002 fb
+    SM cross section = 13.844244 fb
+    luminosity = 3000 1/fb
+NUMBER OF DM EVENTS: 627.282359999982
+NUMBER OF SM EVENTS: 41532.73200001422
+
+--------------------------CHECK---------------------------
+--> Csection = Nevents/Luminosity (2 digits approx)
+DM: 0.20909412000000002 = 0.209094119999994 (True)
+SM: 13.844244 = 13.84424400000474 (True)
+
+-------------------------RESULTS---------------------------
+r = 0.15031116667738606
+r > 1 when
+    lhs > 0.056744929133182284
+
+
+---------------------------INFO---------------------------
+EVENT:
+    ptj = 800 GeV
+    mdm = 62.0 GeV
+    DM cross section = 0.098805591 fb
+    SM cross section = 13.844244 fb
+    luminosity = 3000 1/fb
+NUMBER OF DM EVENTS: 296.41677299993466
+NUMBER OF SM EVENTS: 41532.73200001422
+
+--------------------------CHECK---------------------------
+--> Csection = Nevents/Luminosity (2 digits approx)
+DM: 0.098805591 = 0.09880559099997822 (True)
+SM: 13.844244 = 13.84424400000474 (True)
+
+-------------------------RESULTS---------------------------
+r = 0.07102822239791244
+r > 1 when
+    lhs > 0.08254812400424255
+
+
+---------------------------INFO---------------------------
+EVENT:
+    ptj = 800 GeV
+    mdm = 62.5 GeV
+    DM cross section = 0.003708865 fb
+    SM cross section = 13.844244 fb
+    luminosity = 3000 1/fb
+NUMBER OF DM EVENTS: 11.126595000005231
+NUMBER OF SM EVENTS: 41532.73200001422
+
+--------------------------CHECK---------------------------
+--> Csection = Nevents/Luminosity (2 digits approx)
+DM: 0.003708865 = 0.003708865000001744 (True)
+SM: 13.844244 = 13.84424400000474 (True)
+
+-------------------------RESULTS---------------------------
+r = 0.002666186046739151
+r > 1 when
+    lhs > 0.4260665653283286
+
+
+---------------------------INFO---------------------------
+EVENT:
+    ptj = 800 GeV
+    mdm = 63.0 GeV
+    DM cross section = 46.301357 fb
+    SM cross section = 13.844244 fb
+    luminosity = 3000 1/fb
+NUMBER OF DM EVENTS: 138904.07099994828
+NUMBER OF SM EVENTS: 41532.73200001422
+
+--------------------------CHECK---------------------------
+--> Csection = Nevents/Luminosity (2 digits approx)
+DM: 46.301357 = 46.30135699998276 (True)
+SM: 13.844244 = 13.84424400000474 (True)
+
+-------------------------RESULTS---------------------------
+r = 33.284584900875096
+r > 1 when
+    lhs > 2.079982463834604
+
+
+---------------------------INFO---------------------------
+EVENT:
+    ptj = 800 GeV
+    mdm = 65.0 GeV
+    DM cross section = 16.812120999999998 fb
+    SM cross section = 13.844244 fb
+    luminosity = 3000 1/fb
+NUMBER OF DM EVENTS: 50436.36299998514
+NUMBER OF SM EVENTS: 41532.73200001422
+
+--------------------------CHECK---------------------------
+--> Csection = Nevents/Luminosity (2 digits approx)
+DM: 16.812120999999998 = 16.812120999995045 (True)
+SM: 13.844244 = 13.84424400000474 (True)
+
+-------------------------RESULTS---------------------------
+r = 12.085703423083876
+r > 1 when
+    lhs > 3.451797260287433
+
+
+---------------------------INFO---------------------------
+EVENT:
+    ptj = 800 GeV
+    mdm = 70.0 GeV
+    DM cross section = 7.3113752000000005 fb
+    SM cross section = 13.844244 fb
+    luminosity = 3000 1/fb
+NUMBER OF DM EVENTS: 21934.125599991847
+NUMBER OF SM EVENTS: 41532.73200001422
+
+--------------------------CHECK---------------------------
+--> Csection = Nevents/Luminosity (2 digits approx)
+DM: 7.3113752000000005 = 7.311375199997282 (True)
+SM: 13.844244 = 13.84424400000474 (True)
+
+-------------------------RESULTS---------------------------
+r = 5.255916982877041
+r > 1 when
+    lhs > 5.234280563100478
+
+
+---------------------------INFO---------------------------
+EVENT:
+    ptj = 800 GeV
+    mdm = 75.0 GeV
+    DM cross section = 4.6478772 fb
+    SM cross section = 13.844244 fb
+    luminosity = 3000 1/fb
+NUMBER OF DM EVENTS: 13943.631599992554
+NUMBER OF SM EVENTS: 41532.73200001422
+
+--------------------------CHECK---------------------------
+--> Csection = Nevents/Luminosity (2 digits approx)
+DM: 4.6478772 = 4.6478771999975175 (True)
+SM: 13.844244 = 13.84424400000474 (True)
+
+-------------------------RESULTS---------------------------
+r = 3.341212294754484
+r > 1 when
+    lhs > 6.564916560796594
+
+
+---------------------------INFO---------------------------
+EVENT:
+    ptj = 800 GeV
+    mdm = 90.0 GeV
+    DM cross section = 2.0393579 fb
+    SM cross section = 13.844244 fb
+    luminosity = 3000 1/fb
+NUMBER OF DM EVENTS: 6118.07370000163
+NUMBER OF SM EVENTS: 41532.73200001422
+
+--------------------------CHECK---------------------------
+--> Csection = Nevents/Luminosity (2 digits approx)
+DM: 2.0393579 = 2.0393579000005433 (True)
+SM: 13.844244 = 13.84424400000474 (True)
+
+-------------------------RESULTS---------------------------
+r = 1.4660300596775964
+r > 1 when
+    lhs > 9.910825017476057
+
+
+---------------------------INFO---------------------------
+EVENT:
+    ptj = 800 GeV
+    mdm = 100.0 GeV
+    DM cross section = 1.3954403 fb
+    SM cross section = 13.844244 fb
+    luminosity = 3000 1/fb
+NUMBER OF DM EVENTS: 4186.320899999079
+NUMBER OF SM EVENTS: 41532.73200001422
+
+--------------------------CHECK---------------------------
+--> Csection = Nevents/Luminosity (2 digits approx)
+DM: 1.3954403 = 1.395440299999693 (True)
+SM: 13.844244 = 13.84424400000474 (True)
+
+-------------------------RESULTS---------------------------
+r = 1.0031380103926477
+r > 1 when
+    lhs > 11.981216134076654
+
+
+---------------------------INFO---------------------------
+EVENT:
+    ptj = 800 GeV
+    mdm = 120.0 GeV
+    DM cross section = 0.77012847 fb
+    SM cross section = 13.844244 fb
+    luminosity = 3000 1/fb
+NUMBER OF DM EVENTS: 2310.385409999299
+NUMBER OF SM EVENTS: 41532.73200001422
+
+--------------------------CHECK---------------------------
+--> Csection = Nevents/Luminosity (2 digits approx)
+DM: 0.77012847 = 0.7701284699997664 (True)
+SM: 13.844244 = 13.84424400000474 (True)
+
+-------------------------RESULTS---------------------------
+r = 0.5536210622141767
+r > 1 when
+    lhs > 16.12779312177265
+
+
+---------------------------INFO---------------------------
+EVENT:
+    ptj = 800 GeV
+    mdm = 150.0 GeV
+    DM cross section = 0.38715326 fb
+    SM cross section = 13.844244 fb
+    luminosity = 3000 1/fb
+NUMBER OF DM EVENTS: 1161.4597800002175
+NUMBER OF SM EVENTS: 41532.73200001422
+
+--------------------------CHECK---------------------------
+--> Csection = Nevents/Luminosity (2 digits approx)
+DM: 0.38715326 = 0.3871532600000725 (True)
+SM: 13.844244 = 13.84424400000474 (True)
+
+-------------------------RESULTS---------------------------
+r = 0.2783122652782678
+r > 1 when
+    lhs > 22.746525749463743
+
+
+---------------------------INFO---------------------------
+EVENT:
+    ptj = 800 GeV
+    mdm = 180.0 GeV
+    DM cross section = 0.22117172000000002 fb
+    SM cross section = 13.844244 fb
+    luminosity = 3000 1/fb
+NUMBER OF DM EVENTS: 663.5151599996825
+NUMBER OF SM EVENTS: 41532.73200001422
+
+--------------------------CHECK---------------------------
+--> Csection = Nevents/Luminosity (2 digits approx)
+DM: 0.22117172000000002 = 0.22117171999989416 (True)
+SM: 13.844244 = 13.84424400000474 (True)
+
+-------------------------RESULTS---------------------------
+r = 0.15899337231113533
+r > 1 when
+    lhs > 30.094818990931447
+
+
+---------------------------INFO---------------------------
+EVENT:
+    ptj = 800 GeV
+    mdm = 200.0 GeV
+    DM cross section = 0.15871505 fb
+    SM cross section = 13.844244 fb
+    luminosity = 3000 1/fb
+NUMBER OF DM EVENTS: 476.14515000011716
+NUMBER OF SM EVENTS: 41532.73200001422
+
+--------------------------CHECK---------------------------
+--> Csection = Nevents/Luminosity (2 digits approx)
+DM: 0.15871505 = 0.15871505000003905 (True)
+SM: 13.844244 = 13.84424400000474 (True)
+
+-------------------------RESULTS---------------------------
+r = 0.11409524253846172
+r > 1 when
+    lhs > 35.52609543269335
+
+
